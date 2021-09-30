@@ -27,14 +27,9 @@ export default class StoryCard extends Component {
                 })
               }
             >
-              <SafeAreaView style={styles.droidSafeArea} />
-              <View
-                style={
-                    styles.cardContainer
-                }
-              >    
+              
                 <View style={styles.titleContainer}>
-                  <View style={styles.titleTextContainer}>
+                  
                     <Text
                       style={
                          styles.storyTitleTextLight
@@ -44,14 +39,14 @@ export default class StoryCard extends Component {
                     </Text>
                     <Text
                       style={
-                        styles.storyAuthorText
+                        styles.storyAuthorTextLight
                       }
                     >
                       {story.points}
                     </Text>
-                  </View>
+                  
                 </View>
-              </View>
+              
             </TouchableOpacity>
           );
         }
@@ -95,7 +90,8 @@ export default class StoryCard extends Component {
       },
       titleContainer: {
         paddingLeft: RFValue(20),
-        justifyContent: "center"
+        justifyContent: "center",
+        height : 80
       },
       titleTextContainer: {
         flex: 0.8,
